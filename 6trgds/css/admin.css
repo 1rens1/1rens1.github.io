@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+body {
+    background-image: url(/6trgds/assets/images/a-bg.jpg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: rgb(25, 22, 41);
+    color: aliceblue;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.back {
+    font-family: Poppins;
+    color: rgb(255, 194, 80);
+    background-color: azure;
+    border-radius: 5px;
+    padding: 0px;
+    transition: 350ms;
+}
+
+.back:hover {
+    background-color: rgb(255, 194, 80);
+    color: azure;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'MuseoModerno', cursive;
+    font-size: 40px;
+    padding: 0;
+    margin-top: 0;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    
+}
+
+.container {
+    background: aliceblue;
+    border: none;
+    width: 90%;
+    height: 50%;
+    border-radius: 9.5px;
+    vertical-align: middle;
+    margin: auto;
+}
+
+.container * {
+    color: black;
+    font-size: larger;
+}
+
+.container .title {
+    text-align: center;
+    font-size: x-large;
+    font-family: Poppins;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+.rules ul {
+    padding: 25px;
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    
+}
+
+.rules ul *{
+    margin-top: 0;
+    font-size: 19px;
+    font-family: 'Oxygen', 'sans-serif';
+    list-style: none;
+    padding-left: 0px;
+    margin-left: 0px;
+    cursor: default;
+}
+
+.rules ul li {
+    padding: 10px;
+}
+
+::selection {
+    background-color: rgba(255, 220, 103, 0.87);
+}
+
+::-moz-selection {
+    background-color: rgba(255, 220, 103, 0.87);
+}
+
+.rules ul li a {
+    color: rgb(59, 61, 179);
+    transition: 350ms;
+}
+
+.rules ul li a:hover {
+    color: rgb(248, 185, 90);
+    cursor: pointer;
+}
+
+

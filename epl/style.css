@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Poppins;
+    animation-name: blinkingBody;
+    animation-duration: 0.1ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blinkingBody{
+    0% { background-color: black; }
+    50% { background-color: white; }
+    100% { background-color: black; }
+}
+
+#h11 {
+    animation-name: blinkingH1;
+    animation-duration: 0.1ms;
+    animation-iteration-count: infinite;
+    margin: 0;
+    font-size: 50px;
+    text-align: center;
+    margin: 20%;
+}
+
+@keyframes blinkingH1{
+    0% { color: white; }
+    50% { color: black; }
+    100% { color: white; }
+}

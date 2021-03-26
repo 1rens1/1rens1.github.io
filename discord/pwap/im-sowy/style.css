@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url("images/bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top right;
+    background-size: cover ;
+    font-family: Poppins;
+    margin: 0;
+    color: white;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#title {
+    text-align: center;
+    padding-top: 20px;
+    transition: all 200ms;
+}
+
+#title:hover {
+    font-size: 35px;
+    padding-top: 17px;
+    margin-bottom: 18.440px;
+    color: red;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border: 7px solid #232943;
+    box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+        45deg,
+        rgb(234, 0, 255),
+        rgb(0, 204, 255)
+    );
+    border-radius: 7px;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    width: 80%;
+    height: 50%;
+    border-radius: 9.5px;
+    vertical-align: middle;
+    margin: auto;
+    padding: 15px;
+    -webkit-box-shadow: 0px 20px 31px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 20px 31px -9px rgba(0,0,0,0.75);
+    box-shadow: 0px 20px 31px -9px rgba(0,0,0,0.75);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 102, 255);
+    transition: all 200ms;
+}
+
+a:hover {
+    color: rgb(253, 173, 0);
+}
+
+.container li {
+    color: white;
+    transition: all 200ms;
+    font-size: 30px;
+}
+
+.container li:active {
+    transition: none;
+    font-size: 31px;
+}
+
+.container li:hover * {
+    color: rgb(121, 168, 255);
+    transition: all 200ms;
+}
+
+.container li a:hover {
+    color: rgb(253, 173, 0);
+}
+
+.container li {
+    padding-bottom: 10px;
+}
+
+::selection {
+    background-color: rgba(255, 220, 103, 0.5);
+}
+
+::-moz-selection {
+    background-color: rgba(255, 220, 103, 0.5);
+}
+
+footer {
+    color: gray;
+    background-color: rgba(0, 0, 0, 0.75);
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: rgb(124, 129, 160);
+}
+
+.save-dogo {
+    background: url('images/dogotnt.png');
+    background-size: cover;
+    margin-right: 50px;
+    margin-left: 50px;
+    background-position: top center;
+    height: 470px;
+}
+
+#scroll-down {
+    margin: auto;
+    text-align: center;
+    animation-name: scrlDown;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes scrlDown{
+    0% { margin-top: 0; margin-bottom: 10px;}
+    50% { margin-top: 10px; margin-bottom: 0;}
+    100% { margin-top: 0; margin-bottom: 10px;}
+}
+
+#scroll-down * {
+    color: rgb(18, 14, 73);
+    width: 75px;
+    height: 75px;
+    margin: auto;
+    transition: all 500ms;
+}
+#scroll-down:hover svg {
+    color: rgb(255, 153, 0);
+}

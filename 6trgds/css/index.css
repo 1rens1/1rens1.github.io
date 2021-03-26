@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+body {
+    background-image: url(../assets/images/a-bg.jpg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: rgb(25, 22, 41);
+    color: aliceblue;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'MuseoModerno', cursive;
+    font-size: 40px;
+    padding: 25px;
+    margin-top: 0;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.container {
+    background: aliceblue;
+    border: none;
+    width: 90%;
+    height: 50%;
+    border-radius: 9.5px;
+    vertical-align: middle;
+    margin: auto;
+}
+
+.container * {
+    color: black;
+    font-size: larger;
+}
+
+.container .title {
+    text-align: center;
+    font-size: x-large;
+    font-family: Poppins;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.buttons {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.buttons button {
+    font-family: 'Oxygen', 'sans-serif';
+    padding: 10px;
+    width: 120px;
+    color: azure;
+    border: none;
+    background-color: rgb(255, 194, 80);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 350ms;
+    font-size: 20px;
+    outline: none;
+}
+
+.buttons button:hover {
+    background-color: white;
+    color: rgb(255, 194, 80);
+    -webkit-box-shadow: 0px 15px 18px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 15px 18px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 15px 18px 0px rgba(0,0,0,0.2);
+}
+
+.buttons button:hover a {
+    color: rgb(255, 194, 80);
+}
