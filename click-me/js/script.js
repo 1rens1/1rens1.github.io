@@ -1,6 +1,26 @@
 var box1g = true;
 var box2g = false;
 
+function isMobile() {
+    const toMatch = [
+        /Android/i,
+        /webOS/i,
+        /iPhone/i,
+        /iPad/i,
+        /iPod/i,
+        /BlackBerry/i,
+        /Windows Phone/i
+    ];
+
+    return toMatch.some((toMatchItem) => {
+        return navigator.userAgent.match(toMatchItem);
+    });
+}
+
+if (isMobile()) {
+    window.location.replace("/incompatible");
+}
+
 function box1change() {
     setTimeout(function() {
         document.getElementById("b1").style.backgroundColor = "red";
