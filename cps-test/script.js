@@ -43,7 +43,6 @@ function updateNum() {
         cps = Math.round(clicks/seconds);
         if (highestCps < cps) { highestCps = cps }
         elmId('cps-res').innerText = `${cps} CPS`;
-        elmId('high-res').innerText = `${highestCps} CPS`;
         elmId('click-here').innerHTML = `Your current cps is<br>${cps}`;
 
     } else { // If the results are infinite then just update the value to 0 cps
@@ -56,6 +55,7 @@ function updateNum() {
 
     // Update clicks value
     elmId('clicks-res').innerText = `${clicks} Clicks`;
+    elmId('high-res').innerText = `${highestCps} CPS`;
 }
 
 function buttonClicked() {
