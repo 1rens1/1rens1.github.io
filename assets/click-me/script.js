@@ -42,17 +42,17 @@ function box2change() {
 
 function box1click() {
     if (box1g) {
-        location.replace("/click-me/pages/green/");
+        location.replace("/pages/click-me/green");
     } else {
-        location.replace("/click-me/pages/red/");
+        location.replace("/pages/click-me/red");
     }
 }
 
 function box2click() {
     if (box2g) {
-        location.replace("/click-me/pages/green/");
+        location.replace("/pages/click-me/green");
     } else {
-        location.replace("/click-me/pages/red/");
+        location.replace("/pages/click-me/red");
     }
 }
 
