@@ -1,4 +1,3 @@
+
 User-agent: *
 Disallow: /
-
-Sitemap: https://1rens1.github.io/404.html
