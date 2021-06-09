@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<!-- 👋 halo pak dwi atau siapapun yang ngeliat ini  -->
+<!-- Code made by rein -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="theme-color" content="#060014" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="https://www.searchpng.com/wp-content/uploads/2018/12/mgpl.png"
+            type="image/x-icon"
+        />
+        <title>Cita-Citaku</title>
+        <style>
+            /* Style made by rein */
+            @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap");
+            @import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap");
+            @import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@900&display=swap");
+
+            html {
+                height: 100%;
+            }
+
+            body {
+                margin: 0px;
+                background-image: url("https://i.imgur.com/sX7OcbL.jpg");
+                background-position: left center;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                color: white;
+                font-family: Oxygen, sans-serif;
+                background-color: rgb(25, 22, 41);
+            }
+
+            .title {
+                text-align: center;
+                font-size: 3rem;
+                margin-top: 10px;
+                font-family: monospace;
+            }
+
+            .title-text {
+                display: inline;
+                background: linear-gradient(currentColor 0 0) 0 100% /
+                    var(--d, 0) 3px no-repeat;
+                transition: 1s;
+            }
+
+            .title-text:hover {
+                --d: 100%;
+            }
+
+            .container {
+                width: 85%;
+                max-width: 1000px;
+                margin: 0 auto auto auto;
+                background-color: white;
+                color: black;
+                padding: 8px;
+                border-radius: 10px;
+                font-size: 19px;
+                box-shadow: 0px 10px 35px -3px rgba(0, 0, 0, 0.35);
+                -webkit-box-shadow: 0px 10px 35px -3px rgba(0, 0, 0, 0.35);
+                -moz-box-shadow: 0px 10px 35px -3px rgba(0, 0, 0, 0.35);
+            }
+
+            .questions {
+                margin-bottom: 0;
+            }
+
+            .questions strong {
+                background: linear-gradient(currentColor 0 0) 0 100% /
+                    var(--d, 0) 2px no-repeat;
+                transition: 1s;
+                cursor: default;
+            }
+
+            .questions li:hover strong {
+                --d: 100%;
+            }
+
+            .questions li::marker {
+                font-weight: 700;
+            }
+
+            .questions li {
+                font-weight: 400;
+                margin-bottom: 10px;
+                max-width: 750px;
+                transition: 500ms ease-in-out;
+                top: 0;
+            }
+
+            .questions li:hover {
+                text-shadow: 0px 2.5px 5px rgba(0, 0, 0, 0.25);
+            }
+
+            ::selection {
+                background-color: rgba(255, 220, 103, 0.87);
+            }
+
+            .unselectable,
+            br {
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                -khtml-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+
+            footer {
+                margin-top: 50px;
+                text-align: center;
+                padding: 25px;
+                background-color: #353535;
+                font-family: inherit;
+                color: #d4d4d4;
+            }
+
+            .incorp {
+                background: linear-gradient(currentColor 0 0) 0 100% /
+                    var(--d, 100%) 1px no-repeat;
+                transition: 1s;
+            }
+
+            .incorp:hover {
+                --d: 0;
+            }
+
+            ::-webkit-scrollbar {
+                width: 10px;
+                height: 10px;
+            }
+            ::-webkit-scrollbar-thumb {
+                background: linear-gradient(13deg, #7a8aff 14%, #9e7dff 64%);
+                border-radius: 15px;
+            }
+            ::-webkit-scrollbar-thumb:hover {
+                background: linear-gradient(
+                    13deg,
+                    #7a89ffe9 14%,
+                    #9e7dffe9 64%
+                );
+            }
+            ::-webkit-scrollbar-track {
+                background: #00000000;
+                border-radius: 0px;
+            }
+
+            .blinker {
+                font-weight: normal;
+                animation-name: blinker;
+                animation-iteration-count: infinite;
+                animation-timing-function: cubic-bezier(1, 0, 0, 1);
+                animation-duration: 1s;
+                position: absolute;
+            }
+
+            @keyframes blinker {
+                from {
+                    opacity: 1;
+                }
+                to {
+                    opacity: 0;
+                }
+            }
+
+            .heart {
+                padding-left: 2.5px;
+                transition: 500ms ease-in-out;
+            }
+
+            .heart svg {
+                width: 13px;
+                height: 13px;
+            }
+
+            .heart:hover {
+                color: rgb(182, 77, 77);
+            }
+
+            #incorp {
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body id="body">
+        <h1 id="title" class="title unselectable">
+            <div class="title-text">Cita-Citaku</div>
+            <span class="blinker" role="none">|</span>
+        </h1>
+        <div class="container">
+            <ol class="questions" type="a">
+                <li>
+                    <strong>Bagaimana rasanya sekolah saat pandemi?</strong
+                        ><br />
+                        Bagi saya, rasanya bersekolah saat pandemi adalah merindukan
+                        teman-teman saya dan tidak bisa berkumpul. Tetapi saya bisa
+                        pergi ke toilet dan makan/minum tanpa ijin.
+                    </li>
+                    <li>
+                        <strong
+                        >Kamu kangen gak belajar di sekolah? Apa harapanmu
+                        sekarang ini?</strong
+                        ><br />
+                        Saat pandemi ini saya kangen belajar di sekolah karena di
+                        sekolah ada banyak teman dan guru-guru untuk berbicara.
+                        Harapanku sekarang adalah corona segera pergi.
+                    </li>
+                    <li>
+                        <strong>Cita-cita kamu apa?</strong><br />
+                        Cita-cita saya adalah menjadi software engineer dan/atau
+                        programmer.
+                    </li>
+                </ol>
+                <div
+                style="
+                margin: 0 0 15px 5px;
+                visibility: hidden;
+                font-size: 15px;
+                transition: 200ms ease-in-out;
+                opacity: 0;
+                "
+                id="waited-text"
+                >
+                <i>Pencet logo © dibawah untuk easter egg.</i>
+            </div>
+        </div>
+        <footer class="unselectable">
+            <div>
+                A
+                <span class="incorp" id="incorp"
+                ><span id="secret-button">©</span> Rein INC</span
+                >
+                Production
+            </div>
+            <div>
+                Coded with
+                <span class="heart">
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="heart"
+                    class="svg-inline--fa fa-heart fa-w-16"
+                    role="img"
+                    viewBox="0 0 512 512"
+                    >
+                    <path
+                    fill="currentColor"
+                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                    />
+                </svg>
+            </span>
+        </div>
+    </footer>
+    </body>
+    <script>
+        // Script made by rein
+        const body = document.getElementById("body");
+        const oldBody = document.getElementById("body").innerHTML;
+        document.getElementById("body").innerHTML = "<section><span>Password</span><input type=\"text\" id=\"password\"><input type=\"submit\" onclick=\"submit()\"></section>";
+        var secretBtn;
+        var title;
+        var waitedText;
+        function submit() {
+            const passwordInput = document.getElementById("password").value;
+            if (!passwordInput) return alert("Password tidak boleh kosong!");
+            if (passwordInput == `${1}` + "2" + `${0+2-1+2}a`) {
+                body.innerHTML = oldBody;
+                secretBtn = document.getElementById("incorp");
+                title = document.getElementById("title");
+                waitedText = document.getElementById("waited-text");
+                secretBtn.addEventListener("click", () => {
+                    title.innerHTML =
+                        "Hello! Ternyata kamu menemukan <u>easter egg</u> 🐰🥚";
+                    setTimeout(() => {
+                        title.innerHTML =
+                            '<div class="title-text">Cita-Citaku</div><span class="blinker" role="none">|</span>';
+                    }, 5000);
+                });
+                setTimeout(() => {
+                    waitedText.style.visibility = "visible";
+                    waitedText.style.opacity = "0.8";
+                }, 15000);
+            }
+            else return alert("Password salah!");
+        }
+    
+    
+    </script>
+</html>
