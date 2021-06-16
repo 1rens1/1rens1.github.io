@@ -144,7 +144,6 @@ br {
 }
 
 .checkboxes:hover input ~ .checkmark {
-    background-color: #ccc;
 }
 
 .checkboxes input:checked ~ .checkmark {
