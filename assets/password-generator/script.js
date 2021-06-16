@@ -66,10 +66,10 @@ copy_btn.addEventListener("mouseleave", () => {
 // COPY BUTTON
 var copying = false;
 copy_btn.addEventListener("click", () => {
-    if (copying) return;
-    copying = true;
     const text = output.innerText;
     if (!text || text == "Check at least one box.") return;
+    if (copying) return;
+    copying = true;
     var tempRange = document.createElement("input");
     tempRange.value = text;
     document.body.appendChild(tempRange);
