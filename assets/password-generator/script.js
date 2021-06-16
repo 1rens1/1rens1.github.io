@@ -64,7 +64,10 @@ copy_btn.addEventListener("mouseleave", () => {
 });
 
 // COPY BUTTON
+var copying = false;
 copy_btn.addEventListener("click", () => {
+    if (copying) return;
+    copying = true;
     const text = output.innerText;
     if (!text || text == "Check at least one box.") return;
     var tempRange = document.createElement("input");
@@ -73,22 +76,26 @@ copy_btn.addEventListener("click", () => {
     tempRange.select();
     document.execCommand("copy");
     tempRange.remove();
-    setTimeout(() => {
-        copy_btn_hint.innerText = "Password copied to clipboard.";
-    }, 500);
-    setTimeout(() => {
-        copy_btn_hint.style.color = "#fff";
-    }, 450);
-    copy_btn_hint.style.width = "155px";
+
     copy_btn_hint.style.color = "#000";
     setTimeout(() => {
-        copy_btn_hint.style.color = "#000";
+        copy_btn_hint.style.width = "155px";
         setTimeout(() => {
+            copy_btn_hint.style.color = "#fff";
+            copy_btn_hint.innerText = "Password Copied to Clipboard";
             setTimeout(() => {
-                copy_btn_hint.style.color = "#fff";
-            }, 500);
-            copy_btn_hint.innerText = "Copy Password";
-            copy_btn_hint.style.width = "80px";
+                copy_btn_hint.style.color = "#000";
+                setTimeout(() => {
+                    setTimeout(() => {
+                        copy_btn_hint.style.color = "#fff";
+                        setTimeout(() => {
+                            copying = false;
+                        }, 400);
+                    }, 500);
+                    copy_btn_hint.innerText = "Copy Password";
+                    copy_btn_hint.style.width = "80px";
+                }, 500);
+            }, 1000);
         }, 500);
-    }, 2000);
+    }, 500);
 });
