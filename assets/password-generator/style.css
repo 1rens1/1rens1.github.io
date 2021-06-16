@@ -35,6 +35,11 @@ br {
     user-select: none;
 }
 
+::selection {
+    background-color: black;
+    color: white;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
@@ -154,6 +159,10 @@ br {
 
 .checkboxes input:checked ~ .checkmark:after {
     display: block;
+}
+
+.checkboxes:hover input:checked ~ .checkmark {
+    background-color: #1785df;
 }
 
 .checkboxes .checkmark:after {

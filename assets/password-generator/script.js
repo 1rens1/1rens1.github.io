@@ -3,9 +3,9 @@ var slider = document.getElementById("slider");
 var lenght_output = document.getElementById("length");
 // output.innerHTML = slider.value;
 
-slider.addEventListener("input", function() {
+slider.addEventListener("input", function () {
     lenght_output.innerText = slider.value;
-})
+});
 
 // PASSWORD GENERATOR
 const check_upper = document.getElementById("check-upper");
@@ -21,6 +21,7 @@ var pass = "";
 var randomSet = "";
 
 function generatePassword() {
+    const oldPass = output.innerText;
     pass = "";
     randomSet = "";
     if (check_upper.checked == true) randomSet += upper_letters;
@@ -32,12 +33,16 @@ function generatePassword() {
         for (var i = 0; i < slider.value; i++) {
             const r = randomSet[Math.floor(Math.random() * randomSet.length)];
             pass += r;
+            output.innerText = pass;
         }
     } else {
-        pass = "*Check at least one box.";
+        pass = "Check at least one box.";
+        output.innerText = pass;
+        setTimeout(() => {
+            pass;
+            output.innerText = oldPass;
+        }, 1500);
     }
-
-    output.innerText = pass;
 }
 
 document.getElementById("generate-button").addEventListener("click", () => {
@@ -61,15 +66,29 @@ copy_btn.addEventListener("mouseleave", () => {
 // COPY BUTTON
 copy_btn.addEventListener("click", () => {
     const text = output.innerText;
-    if (!text || text == "Password copied to clipboard.") return
+    if (!text || text == "Check at least one box.") return;
     var tempRange = document.createElement("input");
     tempRange.value = text;
     document.body.appendChild(tempRange);
     tempRange.select();
     document.execCommand("copy");
     tempRange.remove();
-    output.innerText = "Password copied to clipboard.";
     setTimeout(() => {
-        output.innerText = text;
-    }, 3000);
+        copy_btn_hint.innerText = "Password copied to clipboard.";
+    }, 500);
+    setTimeout(() => {
+        copy_btn_hint.style.color = "#fff";
+    }, 450);
+    copy_btn_hint.style.width = "155px";
+    copy_btn_hint.style.color = "#000";
+    setTimeout(() => {
+        copy_btn_hint.style.color = "#000";
+        setTimeout(() => {
+            setTimeout(() => {
+                copy_btn_hint.style.color = "#fff";
+            }, 500);
+            copy_btn_hint.innerText = "Copy Password";
+            copy_btn_hint.style.width = "80px";
+        }, 500);
+    }, 2000);
 });
