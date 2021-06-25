@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="assets/!main/cons-w.js"></script>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="assets/bakmie&siomaytan/images/mie ayam-logo.png"
+            type="image/x-icon"
+        />
+        <script
+            src="https://kit.fontawesome.com/a3c5e5e5f5.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="assets/bakmie&siomaytan/style.css" />
+        <!-- <link rel="stylesheet" href="assets/bakmie&siomaytan/style2.css" /> -->
+        <title>Bakmie & Siomay Tan</title>
+    </head>
+    <body>
+        <div class="topnav fixed-nav" id="topnav">
+            <a href="/bakmie&siomaytan.html" class="brand-name">
+                <img
+                    draggable="false"
+                    src="/assets/bakmie&siomaytan/images/mie ayam-logo.png"
+                    alt="Resto Logo"
+                    class="resto-logo"
+                />
+                <span>Bakmie & Siomay Tan</span>
+            </a>
+            <a id="bar-icon">
+                <i class="fas fa-bars"></i>
+            </a>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#order">Order</a>
+        </div>
+        <div class="pagegreeting unselectable" id="home">
+            <h1>
+                Makanan enak dan terjangkau.
+                <button
+                    class="order-button"
+                    id="order-button"
+                    onclick="location.href='#order'"
+                >
+                    Order
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 185.343 185.343"
+                    >
+                        <g>
+                            <g>
+                                <path
+                                    d="M51.707,185.343c-2.741,0-5.493-1.044-7.593-3.149c-4.194-4.194-4.194-10.981,0-15.175 l74.352-74.347L44.114,18.32c-4.194-4.194-4.194-10.987,0-15.175c4.194-4.194,10.987-4.194,15.18,0l81.934,81.934 c4.194,4.194,4.194,10.987,0,15.175l-81.934,81.939C57.201,184.293,54.454,185.343,51.707,185.343z"
+                                />
+                            </g>
+                        </g>
+                    </svg>
+                </button>
+            </h1>
+            <i
+                class="fas fa-chevron-down"
+                id="scroll-down"
+                onclick="location.href='#menu'"
+            ></i>
+            
+        </div>
+        <span id="menu"></span>
+        <h1 class="section-title">Menu</h1>
+        <div class="menu">
+            <div class="product-container">
+                <h2 class="menu-title"><u tabindex="1">Bakmie Ayam</u></h2>
+                <main>
+                    <img
+                        class="product-image unselectable"
+                        src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/8540f948-9c7f-4ea2-9a54-f9726192b70a_3144b20d-d606-42ef-80bb-d594a48abef0.jpg?h=372&w=372&fit=crop&auto=compress"
+                        alt="Product.image"
+                    />
+                    <div class="product-description">
+                        Bakmie ayam biasa. Termasuk sambal.<br /><span
+                            class="product-price"
+                            >Rp 20.000</span
+                        >
+                        (+Rp 5.000 dengan pangsit/bakso)
+                    </div>
+                </main>
+            </div>
+            <div class="product-container">
+                <h2 class="menu-title"><u tabindex="1">Bakmie Ayam Yamin</u></h2>
+                <main>
+                    <img
+                        class="product-image unselectable"
+                        src="https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/215374f0-2b61-404a-963b-3397832636bd_Go-Biz_20201127_130825.jpeg?h=372&w=372&fit=crop&auto=compress"
+                        alt="Product.image"
+                    />
+                    <div class="product-description">
+                        Bakmie ayam yamin manis. Termasuk sambal.<br /><span
+                            class="product-price"
+                            >Rp 25.000</span
+                        >
+                        (+Rp 5.000 dengan pangsit/bakso)
+                    </div>
+                </main>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="product-container">
+                <h2 class="menu-title"><u tabindex="1">Bakmie Ayam Lebar</u></h2>
+                <main>
+                    <img
+                        class="no-image unselectable"
+                        src="assets/bakmie&siomaytan/images/no-image-available.jpg"
+                        alt="Product.image"
+                    />
+                    <div class="product-description">
+                        Bakmie ayam lebar. Termasuk sambal.<br /><span
+                            class="product-price"
+                            >Rp 20.000</span
+                        >
+                        (+Rp 5.000 dengan pangsit/bakso)
+                    </div>
+                </main>
+            </div>
+            <div class="product-container">
+                <h2 class="menu-title"><u tabindex="1">Siomay</u></h2>
+                <main>
+                    <img
+                        class="product-image unselectable"
+                        src="https://d1sag4ddilekf6.cloudfront.net/compressed/items/IDITE2020111910552480785/photo/menueditor_item_a825f68136d74bffb87e7039e5f2ca94_1606449879112080464.jpg"
+                        alt="Product.image"
+                    />
+                    <div class="product-description">
+                        Siomay ayam Tan. Termasuk saos sambal.<br /><span
+                            class="product-price"
+                            >Rp 40.000</span
+                        >
+                    </div>
+                </main>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="product-container">
+                <h2 class="menu-title"><u tabindex="1">Locupan</u></h2>
+                <main>
+                    <img
+                        class="product-image unselectable"
+                        src="https://d1sag4ddilekf6.cloudfront.net/compressed/items/IDITE2020111910532534492/photo/menueditor_item_3031553728cc4e258738ff8e29bc7fdb_1606449717990240620.jpg"
+                        alt="Product.image"
+                    />
+                    <div class="product-description">
+                        Locupan biasa. Termasuk sambal.<br /><span
+                            class="product-price"
+                            >Rp 25.000</span
+                        >
+                        (+Rp 5.000 dengan pangsit/bakso)
+                    </div>
+                </main>
+            </div>
+            <div class="product-container">
+                <h2 class="menu-title"><u tabindex="1">Kwetiaw Ayam</u></h2>
+                <main>
+                    <img
+                        class="product-image unselectable"
+                        src="https://d1sag4ddilekf6.cloudfront.net/compressed/items/IDITE2020111910514642331/photo/menueditor_item_4e6a7300e9194e78bf9eba34083791e9_1606449679744998738.jpg"
+                        alt="Product.image"
+                    />
+                    <div class="product-description">
+                        Kwetiaw ayam biasa. Termasuk sambal.<br /><span
+                            class="product-price"
+                            >Rp 22.500</span
+                        >
+                        (+Rp 5.000 dengan pangsit/bakso)
+                    </div>
+                </main>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="product-container">
+                <h2 class="menu-title"><u tabindex="1">Pangsit Kuah</u></h2>
+                <main>
+                    <img
+                        class="product-image unselectable"
+                        src="https://d1sag4ddilekf6.cloudfront.net/compressed/items/IDITE2020111910562631450/photo/menueditor_item_20329156d62c4171a7f83b56ebff0a9b_1606449830670649215.jpg"
+                        alt="Product.image"
+                    />
+                    <div class="product-description">
+                        Pangsit rebus kuah isi 6 pcs. Termasuk sambal.<br /><span
+                            class="product-price"
+                            >Rp 20.000</span
+                        >
+                    </div>
+                </main>
+            </div>
+            <div class="product-container">
+                <h2 class="menu-title"><u tabindex="1">Bakso Kuah</u></h2>
+                <main>
+                    <img
+                        class="product-image unselectable"
+                        src="https://d1sag4ddilekf6.cloudfront.net/compressed/items/IDITE2020111910555776517/photo/menueditor_item_7c69e3232a464bdea2315f4bdaa9d30e_1606449853597973558.jpg"
+                        alt="Product.image"
+                    />
+                    <div class="product-description">
+                        Bakso kuah isi 8 pcs. Termasuk sambal.<br /><span
+                            class="product-price"
+                            >Rp 30.000</span
+                        >
+                    </div>
+                </main>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="product-container">
+                <h2 class="menu-title"><u tabindex="1">Bihun Kuah</u></h2>
+                <main>
+                    <img
+                        class="no-image unselectable"
+                        src="assets/bakmie&siomaytan/images/no-image-available.jpg"
+                        alt="Product.image"
+                    />
+                    <div class="product-description">
+                        Bihun kuah dengan ayam. Termasuk sambal.<br /><span
+                            class="product-price"
+                            >Rp 20.000</span
+                        >(+Rp 5.000 dengan pangsit/bakso)
+                    </div>
+                </main>
+            </div>
+            <div class="product-container">
+                <h2 class="menu-title"><u tabindex="1">Pangsit Goreng</u></h2>
+                <main>
+                    <img
+                        class="product-image unselectable"
+                        src="https://d1sag4ddilekf6.cloudfront.net/compressed/items/IDITE2020111910565073431/photo/menueditor_item_ef790d67eb9e4ce89546f8f17feb0cac_1606449745880585996.jpg"
+                        alt="Product.image"
+                    />
+                    <div class="product-description">
+                        Pangsit goreng isi 5 pcs. Termasuk sambal.<br /><span
+                            class="product-price"
+                            >Rp 30.000</span
+                        >
+                    </div>
+                </main>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="product-container">
+                <h2 class="menu-title"><u tabindex="1">Extra Sambal</u></h2>
+                <main>
+                    <img
+                        class="no-image unselectable"
+                        src="assets/bakmie&siomaytan/images/no-image-available.jpg"
+                        alt="Product.image"
+                    />
+                    <div class="product-description">
+                        Ekstra sambal untuk bakmie, bihun, kwetiaw, dll.<br /><span
+                            class="product-price"
+                            >Rp 3.000</span
+                        >
+                    </div>
+                </main>
+            </div>
+            <div class="product-container">
+                <h2 class="menu-title"><u tabindex="1">Extra saos</u></h2>
+                <main>
+                    <img
+                        class="no-image unselectable"
+                        src="assets/bakmie&siomaytan/images/no-image-available.jpg"
+                        alt="Product.image"
+                    />
+                    <div class="product-description">
+                        Extra saos untuk siomay.<br /><span
+                            class="product-price" id="about"
+                            >Rp 3.000</span
+                        >
+                    </div>
+                </main>
+            </div>
+        </div>
+        <h1 class="section-title">About</h1>
+        <div class="about">Bakmie & Siomay Tan didirikan oleh Ibu Setiawati Tanudjaja (alias ibu Tan) pada 2019. Lokasi kami ada di Sektor Catalina AC 4/53, Gading Serpong, Tangerang, atau bisa dilihat di <a href="https://goo.gl/maps/YhruWpVeuZF8BXrw8" target="_blank" rel="noopener noreferrer">Google Maps <i class="fas fa-external-link-alt"></i></a></div>
+        <h1 class="section-title">Order</h1>
+        <div class="order-info" id="order">
+            Makanan kami bisa dipesan melalui...
+            <div class="order-options unselectable">
+                <a target="_blank" onclick="window.open('https:\/\/gofood.co.id/english/jakarta/restaurant/bakmie-siomay-tan-catalina-bcf7e8b5-836b-4b46-9fca-8f1652634a96','newwindow1')" class="logos gofood-logo"></a>
+                <a target="_blank" onclick="window.open('https:\/\/food.grab.com/id/en/restaurant/bakmie-siomay-tan-catalina-delivery/6-CYVKTAKFTGCXUE','newwindow2')" class="logos grabfood-logo"></a>
+                <!-- <a target="_blank" onclick="window.open('','newwindow3 ')" class="logos shopeefood-logo"></a> -->
+            </div>
+        </div>
+        <br>
+        <footer class="unselectable">
+            <i class="far fa-copyright"></i> Copyright • Rens INC. • 2020 - 2021<br>
+            <a href="license.html" target="_blank">License</a> • All rights reserved.
+        </footer>
+    </body>
+    <script src="assets/bakmie&siomaytan/script.js"></script>
+</html>

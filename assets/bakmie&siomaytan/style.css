@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    background-color: var(--background);
+    margin: 0;
+    color: white;
+}
+
+* {
+    scrollbar-color: var(--gradient2) #cc4400;
+    scrollbar-width: 7.5px;
+    scrollbar-arrow-color: var(--gradient2);
+}
+
+::-webkit-scrollbar {
+    width: 7.5px;
+    background-color: #cc4400;
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(
+        45deg,
+        var(--gradient1) 0%,
+        var(--gradient2) 100%
+    );
+    border-radius: 15px;
+}
+
+::selection {
+    background-color: rgba(255, 166, 0, 0.5);
+}
+
+.unselectable, br {
+    -webkit-user-drag: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.topnav {
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    font-weight: 600;
+    background-color: var(--background);
+    border-bottom: 5px solid rgb(200, 0, 0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: 500ms ease-in-out;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:first-child {
+    padding: 13.5px 16px;
+}
+
+.topnav a:not(:first-child) {
+    transition: 200ms ease-in-out;
+}
+
+.topnav a:not(:first-child):hover {
+    background-color: var(--nav-object-hover);
+}
+
+.topnav #bar-icon {
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .pagegreeting h1 {
+        font-size: 40px !important;
+        width: 100%;
+        margin: 0 25px;
+    }
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a#bar-icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: fixed;
+    }
+    .topnav.responsive a:first-child {
+        background-color: rgb(200, 0, 0);
+        margin-left: auto;
+        margin-right: 0;
+    }
+    .topnav.responsive #bar-icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 955px) {
+    .menu  {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .menu-title {
+        text-align: center;
+        margin-left: 0;
+    }
+    .product-description {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .product-image, .no-image {
+        display: block !important;
+        margin: auto !important;
+        width: 300px !important;
+        filter: saturate(125%) brightness(75%);
+        object-fit: cover;
+    }
+    .product-container {
+        margin: 0 10px;
+    }
+}
+
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    top: -40px;
+    transform: translateY(40px);
+    transition: transform .5s;
+    z-index: 9999;
+}
+
+.brand-name {
+    margin-right: 15px;
+    padding-right: 0 !important;
+    font-weight: 700;
+}
+
+.resto-logo {
+    width: 1.5em;
+    margin-right: 5px;
+    margin-bottom: -5.5px;
+}
+
+.pagegreeting {
+    color: white;
+    cursor: default;
+    font-family: "Varela Round", Poppins, sans-serif;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/mie-ayam-static972jpg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    transition: background-image 1s;
+}
+
+.pagegreeting h1 {
+    width: 50%;
+    font-size: 50px;
+    margin-left: 50px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.fa-chevron-down {
+    display: inline-block;
+    position: absolute;
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    padding-bottom: 10px;
+    animation: float 1s ease-in-out infinite alternate;
+}
+
+.fa-chevron-down::before {
+    cursor: pointer;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+.section-title {
+    padding: 10px 0;
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+
+.section-title:first-of-type { border-top: rgb(200, 0, 0) 5px solid; }
+
+.menu {
+    padding-bottom: 20px;
+    color: white;
+    width: 100%;
+    flex: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-title {
+    cursor: default;
+    margin: 0;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.menu-title u {
+    padding: 0 5px;
+    text-decoration: none;
+    background-image: linear-gradient(120deg, var(--gradient2) 0%, var(--gradient1) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 100%;
+    transition: background-size 500ms ease;
+}
+
+.menu-title u:hover {
+    background-size: 100% 100%;
+}
+
+.menu-title u:focus {
+    background-size: 100% 100%;
+}
+
+.product-container {
+    display: inline-block;
+    flex: 50% !important;
+}
+
+.order-button {
+    padding: 0.5rem 1rem;
+    font-size: 20px;
+    color: white;
+    display: block;
+    margin-top: 10px;
+    border: white 2px solid;
+    border-radius: 0;
+    cursor: pointer;
+    background: none;
+    transition: 500ms ease;
+}
+
+.order-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.order-button svg {
+    transform: translateY(.5px);
+    height: 1rem;
+    margin-bottom: -0.25px;
+    transition: 500ms ease;
+}
+
+.order-button:hover svg {
+    transform: translateY(.5px) translateX(2px);
+}
+
+.order-button svg path {
+    fill: white;
+    transition: 500ms ease;
+}
+
+.order-button:hover svg path {
+    fill: black;
+}
+
+.product-image {
+    margin-left: .75rem;
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+    display: inline-block;
+    filter: saturate(125%);
+}
+
+.no-image {
+    filter: none !important;
+    margin-left: .75rem;
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.product-description {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.product-price:hover {
+    text-decoration: underline;
+    text-decoration-thickness: .15rem;
+}
+
+a {
+    color: white;
+    text-decoration-thickness: .15rem;
+}
+
+a:hover { text-decoration: none; }
+
+.fa-external-link-alt {
+    transform: scale(70%) translateY(-.2rem) translateX(-.4rem);
+}
+
+.about {
+    text-align: justify;
+    margin: 0 20px;
+}
+
+.order-info {
+    text-align: center;
+}
+
+.gofood-logo {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Gofood_logo.svg/1200px-Gofood_logo.svg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.grabfood-logo {
+    background-image: url("https://1.bp.blogspot.com/-hcu1TmN-Bgo/Xzqfg8p71oI/AAAAAAAAAOQ/EXlVIFYvMRYHqOyci8KaNJnxaye1S89cACLcBGAsYHQ/s2048/logo%2Bgrabfood%2Byogiancreative2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.shopeefood-logo {
+    background-image: url("https://seeklogo.com/images/S/shopee-food-indonesia-logo-F49E5D08CA-seeklogo.com.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.logos {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border: 5px solid white;
+    margin: 0 1vh;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, .5);
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+:root {
+    --background: rgb(211, 49, 0);
+    --nav-object-hover: rgba(0, 0, 0, .2);
+    --gradient1: rgb(255, 174, 0);
+    --gradient2: rgb(255, 123, 0);
+}
