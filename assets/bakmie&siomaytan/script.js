@@ -13,6 +13,35 @@ function navopen() {
     }
 }
 
+const gfapp = document.getElementById("gfapp");
+
+function isMobile() {
+    const toMatch = [
+        /Android/i,
+        /webOS/i,
+        /iPhone/i,
+        /iPad/i,
+        /iPod/i,
+        /BlackBerry/i,
+        /Windows Phone/i,
+    ];
+
+    return toMatch.some((toMatchItem) => {
+        return navigator.userAgent.match(toMatchItem);
+    });
+}
+
+gfapp.addEventListener("click", () => {
+    var gflink;
+    if (document.body.clientWidth < 600) {
+        gflink = "https://gofood.link/u/N0dRK";
+    } else {
+        gflink =
+            "https://gofood.co.id/jakarta/restaurant/bakmie-siomay-tan-catalina-bcf7e8b5-836b-4b46-9fca-8f1652634a96";
+    }
+    window.open(gflink);
+});
+
 document.getElementById("bar-icon").addEventListener("click", () => {
     navopen();
 });

@@ -125,6 +125,9 @@ body {
 }
 
 @media screen and (max-width: 955px) {
+    .map-embed {
+        width: 90% !important;
+    }
     .menu  {
         flex-direction: column;
         justify-content: center;
@@ -136,11 +139,12 @@ body {
     .product-description {
         text-align: center;
         margin-bottom: 20px;
+        width: 100%;
     }
     .product-image, .no-image {
         display: block !important;
         margin: auto !important;
-        width: 300px !important;
+        width: 90% !important;
         filter: saturate(125%) brightness(75%);
         object-fit: cover;
     }
@@ -247,7 +251,7 @@ body {
 .menu-title u {
     padding: 0 5px;
     text-decoration: none;
-    background-image: linear-gradient(120deg, var(--gradient2) 0%, var(--gradient1) 100%);
+    background-image: linear-gradient(120deg, var(--gradient1) 0%, var(--gradient2) 100%);
     background-repeat: no-repeat;
     background-size: 100% 0.2em;
     background-position: 0 100%;
@@ -314,6 +318,10 @@ body {
     filter: saturate(125%);
 }
 
+.product-image:last-child, .product-container:nth-child(11) {
+    transform: scale();
+}
+
 .no-image {
     filter: none !important;
     margin-left: .75rem;
@@ -324,6 +332,7 @@ body {
 }
 
 .product-description {
+    overflow: hidden;
     display: inline-block;
     vertical-align: top;
 }
@@ -340,18 +349,14 @@ a {
 
 a:hover { text-decoration: none; }
 
-.fa-external-link-alt {
-    transform: scale(70%) translateY(-.2rem) translateX(-.4rem);
-}
+.fa-external-link-alt { transform: scale(70%) translateY(-.2rem) translateX(-.4rem); }
 
 .about {
     text-align: justify;
     margin: 0 20px;
 }
 
-.order-info {
-    text-align: center;
-}
+.order-info { text-align: center; }
 
 .gofood-logo {
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Gofood_logo.svg/1200px-Gofood_logo.svg.png");
@@ -385,16 +390,28 @@ a:hover { text-decoration: none; }
     cursor: pointer;
 }
 
+.map-embed {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 7.5px;
+    max-width: 800px;
+    width: 100%;
+}
+
 footer {
     background-color: rgba(0, 0, 0, .5);
     text-align: center;
     padding: 20px 0;
+}
 
+.fa-copyright {
+    transform: scale(80%);
 }
 
 :root {
     --background: rgb(211, 49, 0);
     --nav-object-hover: rgba(0, 0, 0, .2);
     --gradient1: rgb(255, 174, 0);
-    --gradient2: rgb(255, 123, 0);
+    --gradient2: rgb(255, 94, 0);
 }
