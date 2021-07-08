@@ -1,0 +1,32 @@
+svg.autograph {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+    left: 10px;
+    fill: transparent;
+    font-size: 50px;
+    overflow: visible;
+    
+}
+
+svg.autograph path {
+    stroke: black;
+    stroke-width: 5px;
+    -webkit-touch-callout: none;
+    animation: handwriting 5s ease;
+    animation-fill-mode: forwards;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    stroke-dasharray: 3700;
+    stroke-dashoffset: 3700;
+    
+}
+
+@keyframes handwriting {
+    to {
+        stroke-dashoffset: 1900;
+    }
+}
