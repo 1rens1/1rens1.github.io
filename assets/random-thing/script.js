@@ -33,7 +33,8 @@ function findInputRandom() {
 runBtn.addEventListener("click", () => {
     if (
         !guessing &&
-        input.value > 0
+        input.value > 0 &&
+	input.value % 1 === 0
     ) {
         findInputRandom();
         triesText.style.visibility = "visible";
