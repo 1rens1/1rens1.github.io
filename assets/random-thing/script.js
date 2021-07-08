@@ -23,7 +23,8 @@ function findInputRandom() {
         if (randomGuess != input.value) {
             findInputRandom();
         } else {
-            triesText.style.visibility = "visible";
+            input.readOnly = false;
+            input.focus();
             guessing = false;
             tries = 0;
         }
@@ -34,10 +35,11 @@ runBtn.addEventListener("click", () => {
     if (
         !guessing &&
         input.value > 0 &&
-	input.value % 1 === 0
+        input.value % 1 === 0
     ) {
         findInputRandom();
         triesText.style.visibility = "visible";
+        input.readOnly = true;
     } else {
         runBtn.style.backgroundColor = "#ff0000";
         setTimeout(() => {
