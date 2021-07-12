@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--primary-color);
+    min-height: 100vh;
+    margin: 0 25px;
+    background: var(bg-color);
+    background-size: 27%;
+    font-family: Poppins;
+    counter-reset: number;
+}
+
+body.light {
+    background: linear-gradient(
+            rgba(240, 240, 240, 0.95),
+            rgba(240, 240, 240, 0.95)
+        ),
+        url(images/bg-pattern-white.jpg);
+}
+
+body.dark {
+    background: linear-gradient(
+            rgba(20, 20, 20, 0.9),
+            rgba(20, 20, 20, 0.9)
+        ),
+        url(images/bg-pattern-black.jpg);
+    --primary-color: #fff;
+    --bg-color: #333;
+    --box-shadow-color: rgba(0, 0, 0, 0.5);
+    --text-shadow-color: rgba(255, 255, 255, 0.5);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #929292;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #aaaaaa;
+}
+
+::selection {
+    background: rgba(255, 155, 0, 0.5);
+}
+
+h1,
+.header {
+    text-align: center;
+    font-size: clamp(2em, -0.875em + 8.3333vw, 3.5em);
+    padding: 15px 0;
+}
+
+.header span {
+    background: linear-gradient(currentColor, currentColor);
+    background-size: 0 0.1em;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    transition: background-size 1s ease;
+    text-shadow: 0px 3px 0px var(--text-shadow-color);
+}
+
+.header span:hover {
+    background-size: 100% 0.1em;
+}
+
+.container {
+    background: var(--bg-color);
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    max-width: 750px;
+    border: 1.5em solid var(--bg-color);
+    border-radius: 10px;
+    box-shadow: 0 5px 20px -5px var(--box-shadow-color);
+    -webkit-box-shadow: 0 5px 20px -5px var(--box-shadow-color);
+    -moz-box-shadow: 0 5px 20px -5px var(--box-shadow-color);
+}
+
+.rules {
+    padding-left: 35px;
+    font-size: 20px;
+}
+
+.rule-object {
+    margin-bottom: 0.5em;
+    line-height: 1.3em;
+}
+
+.rule-object::marker {
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container a {
+    color: var(--a-color);
+    padding: 0 0.1em;
+    background-image: linear-gradient(var(--a-color), var(--a-color));
+    background-repeat: no-repeat;
+    background-size: 100% 0.1em;
+    background-position: 0 100%;
+    transition: background-size 0.5s ease, color 0.5s ease;
+}
+
+.container a:hover {
+    color: white;
+    background-size: 100% 100%;
+}
+
+.group-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    cursor: pointer;
+    bottom: 0;
+    left: 0;
+    margin: 15px;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(#44eb62, #38c752);
+    border-radius: 200px;
+    color: white;
+    box-shadow: 0 5px 5px 0 var(--box-shadow-color);
+    -webkit-box-shadow: 0 5px 5px 0 var(--box-shadow-color);
+    -moz-box-shadow: 0 5px 5px 0 var(--box-shadow-color);
+    z-index: 100;
+}
+
+.group-btn:hover {
+    background: linear-gradient(#3ace55, #31ac48);
+}
+
+.group-btn:active {
+    background: linear-gradient(#33b64b, #2b943e);
+}
+
+.dark .group-btn {
+    background: var(--bg-color);
+    color: var(--primary-color);
+}
+
+.dark .group-btn:hover {
+    background: #222;
+}
+
+.toggle-theme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    cursor: pointer;
+    bottom: 0;
+    right: 0;
+    margin: 15px;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    background: var(--bg-color);
+    border-radius: 200px;
+    color: var(--primary-color);
+    box-shadow: 0 5px 5px 0 var(--box-shadow-color);
+    -webkit-box-shadow: 0 5px 5px 0 var(--box-shadow-color);
+    -moz-box-shadow: 0 5px 5px 0 var(--box-shadow-color);
+    z-index: 100;
+}
+
+:root {
+    --primary-color: #000;
+    --bg-color: #fff;
+    --box-shadow-color: rgba(0, 0, 0, 0.2);
+    --text-shadow-color: rgba(0, 0, 0, 0.2);
+    --a-color: orange;
+}
