@@ -3,12 +3,12 @@
 * {
     margin: 0;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 body {
     color: var(--primary-color);
     min-height: 100vh;
-    margin: 0 25px;
     background: var(bg-color);
     background-size: 27%;
     font-family: Poppins;
@@ -73,13 +73,19 @@ h1,
     background-size: 100% 0.1em;
 }
 
+.container-box {
+    margin: auto;
+    max-width: max-content;
+    margin-bottom: 50px;
+}
+
 .container {
     background: var(--bg-color);
     display: flex;
-    margin: auto;
     justify-content: center;
+    margin: 0 20px;
     max-width: 750px;
-    border: 1.5em solid var(--bg-color);
+    padding: 1.5em;
     border-radius: 10px;
     box-shadow: 0 5px 20px -5px var(--box-shadow-color);
     -webkit-box-shadow: 0 5px 20px -5px var(--box-shadow-color);
